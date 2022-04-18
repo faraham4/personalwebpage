@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Paintings</title>
+    <!--external font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--external css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--internal css stylesheet-->
+    <style>
+
+        .image-grid {
+            margin-right: 300px;
+            margin-left: 300px;
+            margin-bottom: 50px;
+            /*css variables*/
+            --gap: 16px; 
+            --num-cols: 3;
+            --row-height: 330px;
+            /*specifying the grid design of the page*/
+            box-sizing: border-box;
+            padding: var(--gap);
+            display: grid;
+            grid-template-columns: repeat(var(--num-cols), 1fr);
+            grid-auto-rows: var(--row-height);
+            gap: var(--gap);
+        }
+        /*the following design targets each img to 
+        make it fit the cell in grid view*/
+        .image-grid>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-grid-col2 {
+            grid-column: span 2;
+        }
+
+
+        .image-grid-row2 {
+            grid-row: span 2;
+        }
+        /*for screens that are < 1024px they will get the following view*/
+        @media screen and (max-width:1024px) {
+            .image-grid {
+                --num-cols: 2;
+                --row-height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="background-style">
+        <h1 class="website-name">Flora&apos;s Arts</h1>
+        <nav>
+            <p>
+                <a class="link-style" href="index.html">HOME</a>
+                <a class="link-style" href="aboutus.html">ABOUT</a>
+                <a class="link-style" href="paintings.html">PAINTINGS</a>
+                <a class="link-style" href="contactus.html">CONTACT</a>
+            </p>
+        </nav>
+    </header>
+
+    <div class="image-grid"><!--my paintings images-->
+        <img class="image-grid-col2 image-grid-row2" src="IMG-2.jpg" alt="painting">
+        <img src="IMG-1.jpg" alt="painting">
+        <img src="IMG-3.jpg" alt="painting">
+        <img src="IMG-4.jpg" alt="painting">
+        <img src="IMG-5.jpg" alt="painting">
+        <img src="IMG-6.jpg" alt="painting">
+        <img class="image-grid-col2 image-grid-row2" src="IMG-8.jpg" alt="painting">
+        <img src="IMG-7.jpg" alt="painting">
+        <img src="IMG-9.jpg" alt="painting">
+        <img src="IMG-10.jpg" alt="painting">
+        <img src="IMG-11.jpg" alt="painting">
+        <img src="IMG-12.jpg" alt="painting">
+        <img src="IMG-14.jpg" alt="painting">
+        <img class="image-grid-col2 image-grid-row2"  src="IMG-13.jpg" alt="painting">
+    </div>
+
+    <footer>
+        <address>
+            <a href="mailto:1910895@uj.edu.sa"><img src="mailicon.png" alt="mail icon" class="icon"></a>
+            <a href="https://www.instagram.com/florarts4/">
+                <img src="instaicon.png" alt="instagram icon" class="icon">
+            </a>
+        </address>
+    </footer>
+</body>
+
+</html>

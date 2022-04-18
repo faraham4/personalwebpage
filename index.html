@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<!--This document contains code for my website's welcome page-->
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="keywords" content="art, paint, painting, artist, drawing,
+        art lessons, painting courses, watercolors, acrylics, gouache, oil paints">
+    <meta name="description" content="This is a personal website which presents
+         the art works of artist Flora and includes weekly updated articles about art.">
+    <!--external font linking-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--external css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--internal css stylesheet-->
+    <style>
+        em {
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        #firstsection {
+            width: 68%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .article-1-style {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            padding: 25px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .article-2-style {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            padding: 25px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #secondsection {
+            width: 97.3%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .article-3-style {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            padding: 25px;
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            margin-right: 20px;
+        }
+
+        aside {
+            position: absolute;
+            left: 80%;
+            top:27%;
+            font-size: 18px;
+            padding: 25px;
+            height: 130vh;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(255, 233, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="background-style">
+        <h1 class="website-name">Flora&apos;s Arts</h1>
+        <nav>
+            <p>
+                <a class="link-style" href="index.html">HOME</a>
+                <a class="link-style" href="aboutus.html">ABOUT</a>
+                <a class="link-style" href="paintings.html">PAINTINGS</a>
+                <a class="link-style" href="contactus.html">CONTACT</a>
+            </p>
+        </nav>
+    </header>
+
+    <!--main content of the page-->
+    <main style="float: left;">
+        <section id="firstsection">
+            <!--article 1, with own unit information-->
+            <article class="article-1-style">
+                <!--talk about your art journey and add pics-->
+                <h2>Hi! I'm Flora, I'm an artist and a software engineering student.</h2>
+                <p>
+                    I started my art journey when I was 7 years old. The materials I used were very simple,
+                    colored pencils and printing papers. Throughout the years I evolved and strated using watercolors,
+
+                    <img src="watercolor-picture.jpg" alt="picture of watercolor palette"
+                        style="display: block;  margin-left: auto; margin-right: auto; margin-top: 15px; margin-bottom: 15px;">
+                </p>
+                <p>
+                    then I expirmented with oil paints in my middle school art classes,
+                    and that was when I realized that painting is my passion.
+
+                    <img src="oil-paints-pic.jpg" alt="picture of oil paints palette"
+                        style=" display: block;  margin-left: auto; margin-right: auto; margin-top: 15px; margin-bottom: 15px;">
+                </p>
+
+            </article>
+
+            <!--article 2, with hyperlink to another source and unordered list-->
+            <article class="article-2-style">
+                <!--talk about how others can start at watercolors-->
+                <h2>Starting in art is an easy process.</h2>
+                <p>
+                    Get a paper, any type of colors, free your mind from all the negative thoughts and start!<br><br>
+                    Beginners usually struggle to find a good resource about painting to start with.
+                    <a href="https://thepostmansknock.com/painting-with-watercolors-for-beginners/">Painting with
+                        watercolors for beginners</a> is an article written
+                    by Lindsey Bugbee.
+
+                    The article features the following topics:
+                <ul>
+                    <li>Basic supplies to get before starting with watercolors:</li>
+                    <ol>
+                        <li>Watercolors</li>
+                        <li>Brushes</li>
+                        <li>Watercolor Paper</li>
+                        <li>Water and a Cloth</li>
+                    </ol>
+                    <li>The general process of painting with watercolors</li>
+                    <li>How to mix colors on the palette</li>
+                    <li>Contouring technique</li>
+                    <li>A free worksheet to develop your skills in watercolors</li>
+                    <li>And finally, a few tips on practicing watercolors</li>
+                </ul>
+
+                </p>
+
+            </article>
+        </section>
+
+        <section id="secondsection">
+            <!--an article with figure element and figcaption-->
+            <article class="article-3-style">
+                <h2>Why Nature?</h2>
+                <figure style="display: block; margin-left: 350px;">
+                    <img src="IMG-7.jpg" alt="painting of flowers field" style="width: 70%;">
+                    <figcaption style="font-style: italic;">Field of flowers, acrylic painting.</figcaption>
+                </figure>
+                <p>The scenery of nature have always captured my attention. I find it quite fascinating the colors of
+                    trees, flowers, the sky and the sea.
+                    That's why I love painting nature more than anything.
+                </p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h2>Workshop Announcments</h2>
+        <!--news or events side information-->
+        <details>
+            <summary>Modern Art Oil Paints Workshop</summary>
+            <p>
+                Modern Art is a training center located in Jeddah, it provides various workshops in the field of Art.
+                They will be hosting a workshop about painting buildings with oil paints on <em>22nd and 23rd of March
+                    2022
+                    from 6:00 pm to 9:00 pm</em>. To register, go to <a style="color: black;"
+                    href="https://www.instagram.com/modernartcenter/">@modernartcenter</a>
+            </p>
+        </details>
+        <details>
+            <summary>Adar Hub Mental Healing with Art Workshop</summary>
+            <p>
+                Adar Art Hub is an art gallery that provides art related workshops and a space for artists to come and
+                paint
+                at any time from <em>8:00 am to 12:00 am </em> during the week. They will be hosting a workshop that
+                raises
+                awareness about
+                mental healing through art in its various forms. To register, go to <a style="color: black ;"
+                    href="https://www.instagram.com/adar_hub/">@adar_hub</a>
+            </p>
+        </details>
+    </aside>
+
+    <footer>
+        <address>
+            <a href="mailto:1910895@uj.edu.sa"><img src="mailicon.png" alt="mail icon" class="icon"></a>
+            <a href="https://www.instagram.com/florarts4/">
+                <img src="instaicon.png" alt="instagram icon" class="icon">
+            </a>
+        </address>
+    </footer>
+
+</body>
+
+</html>

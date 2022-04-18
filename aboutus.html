@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<!--This is the about me page, it includes a table with my student
+and course information-->
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <!--external font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--external css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--internal css stylesheet-->
+    <style> 
+
+        .background {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            padding: 25px;
+            margin-bottom: 50px;
+        }
+
+        .table-style{
+            border-width: 0.5px;
+            width: 80%;
+            border-color: black;
+        }
+        th, td {
+            border-width: 0px;
+            text-align: center;
+        }/*this style targets both the table header and the table data*/
+    </style>
+</head>
+
+<body>
+    <header class="background-style">
+        <h1 class="website-name">Flora&apos;s Arts</h1>
+        <nav>
+            <p>
+                <a class="link-style" href="index.html">HOME</a>
+                <a class="link-style" href="aboutus.html">ABOUT</a>
+                <a class="link-style" href="paintings.html">PAINTINGS</a>
+                <a class="link-style" href="contactus.html">CONTACT</a>
+            </p>
+        </nav>
+    </header>
+        <div class="background"><!--this div contains the main content of the page-->
+            <h2>Who&apos;s Flora?</h2>
+
+            <summary>
+                Flora (Farah Alamri) is a student in University of Jeddah, she is a software engineering in her 8th
+                semester
+                and she&apos;s expected to
+                graduate in 2023. The following table displays some of her academic info regarding Web Development
+                course.
+                She has 3 hours credit in the course. Farah is working on getting an A+ grade in the course.
+            </summary><br><br>
+            <table border="1" cellspacing="12" cellpadding="8" align="center" class="table-style">
+                <caption style="font-weight: 200; font-style: italic; font-size: 22px; margin-bottom: 5px;">Student Grade Sheet</caption>
+                <thead><!--the head section will include student's academic info-->
+                    <colgroup>
+                        <col span="4" style="background-color:rgb(226, 224, 224);" />
+                    </colgroup>
+                    <tr>
+                        <!--merge two rows-->
+                        <th rowspan="2">
+                            <img src="Farahphoto.jpg" width="100" height="130" alt="Picture of student Farah Alamri">
+                        </th>
+                        <th>
+                            <strong>Student Name</strong>
+                        </th>
+                        <th>
+                            <strong>Major</strong>
+                        </th>
+                        <th>
+                            <strong>Semester</strong>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Farah Alamri</td>
+                        <td>Software Engineering</td>
+                        <td>8th semester</td>
+                    </tr>
+                </thead>
+                <!--body of the table includes course information-->
+                <tbody>
+                    <tr >
+                        <th>Course Name</th>
+                        <th>Course Number</th>
+                        <th>Credit Hours</th>
+                        <th>Course Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>CCSW321</td>
+                        <td>3 Hours</td>
+                        <td>A+</td>
+                    </tr>
+                </tbody>
+                <!--foot of the table includes expected graduation year-->
+                <tfoot>
+                    <tr>
+                        <!--merge 4 columns-->
+                        <th colspan="4">
+                            <em>Expected graduation in 2023</em>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    <footer>
+        <address>
+            <a href="mailto:1910895@uj.edu.sa"><img src="mailicon.png" alt="mail icon" class="icon"></a>
+            <a href="https://www.instagram.com/florarts4/">
+                <img src="instaicon.png" alt="instagram icon" class="icon">
+            </a>
+        </address>
+        </address>
+    </footer>
+
+</body>
+
+</html>
